@@ -12,6 +12,7 @@ export default defineConfig({
       },
       exposes: {
         './TestButton': './src/TestButton.tsx',
+        './mount': './src/mount.tsx',
       },
     }),
   ],
