@@ -1,3 +1,5 @@
+import React from 'react';
+
 type ButtonProps = {
     onClick: () => void;
 }
@@ -8,7 +10,7 @@ const Button = ({  onClick }: ButtonProps) => {
         style={{ width: 300 }}
         onClick={onClick}
     >
-        Click me from app 2
+        Click me from app 2 with React version: {React.version}
         </button>
     );
 }

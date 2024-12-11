@@ -9,8 +9,8 @@ export default defineConfig({
     pluginModuleFederation({
       name: 'federation_consumer',
       remotes: {
-        app2:
-          'app2@http://localhost:3002/mf-manifest.json',
+        app2: 'app2@http://localhost:3002/mf-manifest.json',
+        app3: 'app3@http://localhost:3003/mf-manifest.json',
       },
     }),
   ],

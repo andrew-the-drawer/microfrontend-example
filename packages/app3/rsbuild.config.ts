@@ -7,6 +7,12 @@ export default defineConfig({
     pluginReact(),
     pluginModuleFederation({
       name: 'app3',
+      remotes: {
+        app2: 'app2@http://localhost:3002/mf-manifest.json',
+      },
+      exposes: {
+        './TestButton': './src/TestButton.tsx',
+      },
     }),
   ],
   server: {

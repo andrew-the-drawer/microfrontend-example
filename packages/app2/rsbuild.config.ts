@@ -10,6 +10,7 @@ export default defineConfig({
       name: 'app2',
       exposes: {
         './Button': './src/Button.tsx',
+        './TestContext': './src/TestContext.tsx',
       },
       shared: ['react', 'react-dom'],
     }),
